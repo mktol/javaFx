@@ -62,6 +62,7 @@ public class Main extends Application {
     }
 
     public Stage getPrimaryStage() {
+		System.out.println("get primary stage");
         return primaryStage;
     }
 
