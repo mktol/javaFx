@@ -85,6 +85,8 @@ public class Main extends Application {
         personData.add(new Person("Werner", "Meyer"));
         personData.add(new Person("Lydia", "Kunz"));
         personData.add(new Person("Anna", "Best"));
+		personData.add(new Person("Anna", "Bestik"));
+		personData.add(new Person("Annakonda", "Beston"));
         personData.add(new Person("Stefan", "Meier"));
         personData.add(new Person("Martin", "Mueller"));
 
