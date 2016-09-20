@@ -16,6 +16,10 @@ import sample.entity.Person;
 
 import java.io.IOException;
 
+
+/**
+ * Main class for running app
+ */
 public class Main extends Application {
 
     private Stage primaryStage;
@@ -33,6 +37,9 @@ public class Main extends Application {
 
     }
 
+    /**
+     * Init first layout from fxml
+     */
     private void initRootLayout() {
         try {
             FXMLLoader loader = new FXMLLoader();
@@ -42,7 +49,7 @@ public class Main extends Application {
             primaryStage.setScene(sc);
             primaryStage.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
     }
 
