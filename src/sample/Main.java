@@ -25,7 +25,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
 
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("Address App");
+        this.primaryStage.setTitle("Simple address application");
         this.primaryStage.getIcons().add(new Image("file:/bible.png"));
         initRootLayout();
         showPersonOvriviw();
