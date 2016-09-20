@@ -20,6 +20,8 @@ public class Main extends Application {
 
     private Stage primaryStage;
     private BorderPane rootLayout;
+	private ObservableList<Person> personData= FXCollections.observableArrayList();
+	
 
     @Override
     public void start(Stage primaryStage) {
@@ -68,10 +70,12 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+		System.out.println("Staer app");
         launch(args);
+		System.out.println("Stop app");
     }
 
-    private ObservableList<Person> personData= FXCollections.observableArrayList();
+    
 
     public Main() {
         personData.add(new Person("Hans", "Muster"));
