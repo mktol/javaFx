@@ -1,7 +1,9 @@
 package sample.entity;
 
 import javafx.beans.property.*;
+import sample.util.LocalDataAdapter;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
 /**
@@ -90,6 +92,7 @@ public class Person {
         this.city.set(city);
     }
 
+    @XmlJavaTypeAdapter(LocalDataAdapter.class)
     public LocalDate getBirthday() {
         return birthday.get();
     }
